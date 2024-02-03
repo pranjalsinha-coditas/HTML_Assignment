@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                height: 100%;
+            }
+            html {
+                display: table;
+                margin: auto;
+            }
+            body {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .container {
+                border-radius: 5px;
+                background-color: orange;
+                padding: 20px;
+                width: 100%;
+                align-items: center
+            }
+
+            input[type=text], [type=password]
+            {
+                padding: 12px;
+                border: 3px solid #00008B;
+                color: #00008b;
+                background-color: #E3F2F7;
+            }
+            select
+            {
+                padding: 12px;
+                border: 3px solid #00008B;
+                color: #00008B;
+                background-color: #E3F2F7;
+            }
+
+            label
+            {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+
+            input[type=submit]
+            {
+                background-color:blue;
+                color: white;
+                padding: 12px 20px;
+                border-radius: 4px;
+                align-items: center;
+            }
+
+            input[type=submit]:hover
+            {
+                background-color:pink;
+            }
+            .center {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+            }
+            .a 
+            {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+
+            .b
+            {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+
+            .c
+            {
+                color: Blue;
+                padding: 4px;
+                text-align: center;
+                font-size: 30px;
+            }
+            /*clear floats after the columns */
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <form action = "">
+                <div class = "c"><label>Contact Form</label></div>
+                <div class = "row">
+                    <div class = "a">
+                        <label for = "fname">
+                            first name: 
+                        </label>
+                    </div>
+                    <div class = "b">
+                        <input type = "text" placeholder = "Your name..">
+
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "a">
+                        <label for="lname">Last Name: </label>
+                    </div>
+                    <div class="b">
+                        <input type = "text" placeholder="Enter your Email">
+
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "a">
+                        <label for = "password1">Password:
+                        </label>
+                    </div>
+                    <div class = "b">
+                        <input type = "password" placeholder = "">
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "a">
+                        <label for ="password2">Confirm Password: </label>
+                    </div>
+                    <div class = "b">
+                        <input type = "password">
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "a">
+                        <label for = "gender">Gender: </label>
+                    </div>
+                    <div class = "b">
+                        <input type = "radio" name = "gender" value = "male">Male
+                        <input type = "radio" name = "gender" value = "female">Female
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "a">
+                        <label for="city">Your Position<label>
+                    </div>
+                    <div class = "b">
+                        <select>
+                            <option> Select your position: </option>
+                            <option> Associate Software Engineer</option>
+                            <option> Software Engineer </option>
+                            <option> Graphic Designer </option>
+                            <option> Human Resources <option>
+                        </select>
+                    </div>
+                    <div class="inputButton" style="margin-top: 15px;" >
+                        <input style="color: white; background-color: rgb(59, 93, 243); border-radius: 10px; padding: 4px;" type="button" value="Submit" onclick="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
